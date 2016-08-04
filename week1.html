@@ -87,7 +87,12 @@
                 the robot runs. Rosbag is a command in ROS that saves data 
                 published to topics in real time.</p>
             <p>The team implemented a Bang-Bang(BB) controller and a PID 
-                controller. BB controllers are essentially binary controllers. If the car is too close, the BB will push the car full in the opposite direction and vice-versa if the car is too far. The controller has two states: full left and full right. PID contr
+                controller. BB controllers are essentially binary controllers. 
+                If the car is too close, the BB will push the car full in the 
+                opposite direction and vice-versa if the car is too far. The 
+                controller has two states: full left and full right. PID 
+                controllers adjust to the error in a controlled manner that 
+                prevents large switches and inefficiencies.
             <h2>Conclusion</h2>
             <p>The team implemented a wall follower that could switch which wall 
                 was being followed using a gamepad. This program used the 
@@ -95,10 +100,11 @@
                 laser scan to find the error. This error was then fed in to the 
                 PID controller which determined the steering angle for the car 
                 to drive. The team placed 4th in the first round with a time of 
-                8.645s<a href="references.html#2">[2]</a>. In the drag races, we progressed past the first round to
-                be defeated by the “Fastest Loser” in the second round. The team
-                dynamic was very healthy and enjoyable. We all learned how to 
-                deal with others opinions and criticisms.</p>
+                8.645s<a href="references.html#2">[2]</a>. In the drag races, we
+                progressed past the first round to\be defeated by the “Fastest 
+                Loser” in the second round. The team dynamic was very healthy 
+                and enjoyable. We all learned how to deal with others' opinions 
+                and criticisms.</p>
         </div>
     </body>
 </html>
