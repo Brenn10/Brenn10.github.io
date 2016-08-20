@@ -1,17 +1,18 @@
-/* 
+/*
  *  Author:    Brennan Cain
  *  Email:     brenn.cain@gmail.com
  */
-/* 
+/*
     Created on : Jul 2, 2016, 1:10:47 PM
     Author     : Brennan Cain
 */
 @import 'https://fonts.googleapis.com/css?family=Ubuntu';
 html {
     position: relative;
+    background-color: white;
 }
 
-body { 
+body {
     font-family: 'Ubuntu', sans-serif;
     background: white;
 }
