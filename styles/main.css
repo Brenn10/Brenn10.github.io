@@ -24,15 +24,15 @@ p {
 ul {
     list-style:none;
 }
+h1 {
+    color:rgb(124, 0, 200)
+}
 h2 {
     color:rgb(0, 161, 81)
 }
-h3 {
-    color:rgb(124, 0, 200)
-}
 h4 {
-    color:rgb(0, 161, 81)
+    color:rgb(124, 0, 200)
 }
 h5 {
-    color:rgb(124, 0, 200)
+    color:rgb(0, 161, 81)
 }
