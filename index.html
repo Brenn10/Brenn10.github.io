@@ -21,17 +21,18 @@
 
     </head>
     <body>
-        <div class="col-md-2 hidden-sm hidden-xs sticky">
+        <div class="col-sm-2 hidden-xs sticky">
             <ul class="nav nav-pills nav-stacked">
                 <li role="presentation"><a href="#overview">Overview</a></li>
                 <li role="presentation"><a href="#car">The Car</a></li>
                 <li role="presentation"><a href="#week1">Week 1</a></li>
                 <li role="presentation"><a href="#week2">Week 2</a></li>
                 <li role="presentation"><a href="#week3">Week 3</a></li>
+                <li role="presentation"><a href="#week4">Week 4</a></li>
                 <li role="presentation"><a href="#resources">Resources</a></li>
             </ul>
         </div>
-        <div class="hidden-md hidden-lg">
+        <div class="visible-xs">
             <ul class="nav nav-pills">
                 <li role="presentation"><a href="#overview">Overview</a></li>
                 <li role="presentation"><a href="#car">The Car</a></li>
@@ -42,169 +43,208 @@
                 <li role="presentation"><a href="#resources">Resources</a></li>
             </ul>
         </div>
-        <div class="col-md-offset-2 col-md-8 main">
+        <div class="col-sm-offset-2 col-md-8 main">
 
 
             <!--                       The Program                           -->
-
-            <h1 id="overview">The program</h1>
-            <p>
-                The Beaver Works Summer Institue (BWSI) began as an idea by Dr. Robert "Bob" Shin of MIT Lincoln Labs to create a summer program for programmers, an area that was previously undeveloped. His goal was to create a program where high school students from around the United States could work together with top researchers and professionals in the field of robotics to develop autonomous robotics systems. In order to find students for the pilot year of BWSI, Dr. Shin contacted the National Consortium of Secondary STEM Schools (NCSSS) and was able to find students from many of the member schools. Students came from 10 states: Mississippi, Illinois, Arkansas, California, New York, Maine, North Carolina, South Carolina, New Jersey, and Massachuessets.
-            </p>
-            <p>
-                The program lasted for 4 weeks. The students worked each weekday from 9:00am to 5:00pm. During the weekdays, the students listened to lectures and seminars and worked on labs to enforce the material and accomplish weekly goals. On Tuesdays and Thursdays the students would also attend a lesson on communication with Dr. Jane Connor. Each week, the students were given a section of robotics to learn and a challenge.
-            </p>
-            <p>
-                Week 1 focused on the basics of the basics of the Robot Operating System (ROS), Linux (Ubuntu), and Python. The challenge for the week was to make the robot follow the wall using the Lidar.
-            </p>
-            <p>
-                Week 2 focused on image processing and recognition (manipulating and matching images). The challenge for the week was to visual servo (approach using visual input for steering) to a target on the wall and decide which direction to turn based on which color, red or green, is present.
-            </p>
-            <p>
-                Week 3 was intended to be focused on localization and mapping, however, several technical issues led to a focus on the technical challenges instead. These challenges included exploring and detecting colored blobs and completing a correct turn at a colored piece of paper.
-            </p>
-            <p>
-                Week 4 was focused on final preparation for the Grand Prix, the final challenge. The Grand Prix was to be a race around a miniature GRand Prix circuit, complete with shortcuts and sharp turns. During this week, the Grand Prix was hosted and tach challenges were completed.
-            </p>
+            <div id="overview">
+                <h1>The program</h1>
+                <p>
+                    The Beaver Works Summer Institue (BWSI) began as an idea by Dr. Robert "Bob" Shin of MIT Lincoln Labs to create a summer program for programmers, an area that was previously undeveloped. His goal was to create a program where high school students from around the United States could work together with top researchers and professionals in the field of robotics to develop autonomous robotics systems. In order to find students for the pilot year of BWSI, Dr. Shin contacted the National Consortium of Secondary STEM Schools (NCSSS) and was able to find students from many of the member schools. Students came from 10 states: Mississippi, Illinois, Arkansas, California, New York, Maine, North Carolina, South Carolina, New Jersey, and Massachuessets.
+                </p>
+                <p>
+                    The program lasted for 4 weeks. The students worked each weekday from 9:00am to 5:00pm. During the weekdays, the students listened to lectures and seminars and worked on labs to enforce the material and accomplish weekly goals. On Tuesdays and Thursdays the students would also attend a lesson on communication with Dr. Jane Connor. Each week, the students were given a section of robotics to learn and a challenge.
+                </p>
+                <p>
+                    Week 1 focused on the basics of the basics of the Robot Operating System (ROS), Linux (Ubuntu), and Python. The challenge for the week was to make the robot follow the wall using the Lidar.
+                </p>
+                <p>
+                    Week 2 focused on image processing and recognition (manipulating and matching images). The challenge for the week was to visual servo (approach using visual input for steering) to a target on the wall and decide which direction to turn based on which color, red or green, is present.
+                </p>
+                <p>
+                    Week 3 was intended to be focused on localization and mapping, however, several technical issues led to a focus on the technical challenges instead. These challenges included exploring and detecting colored blobs and completing a correct turn at a colored piece of paper.
+                </p>
+                <p>
+                    Week 4 was focused on final preparation for the Grand Prix, the final challenge. The Grand Prix was to be a race around a miniature GRand Prix circuit, complete with shortcuts and sharp turns. During this week, the Grand Prix was hosted and tech challenges were completed.
+                </p>
+            </div>
             <hr>
 
 
             <!--                            The Car                          -->
 
-            <h1 id="car">The Car</h1>
+            <div id="car">
+                <h1>The Car</h1>
 
-            <h2>Chassis</h2>
-            <p>
-                The cars used ion this project were built off of the Traxxas Rally 74076 chassis. This chassis was used because of the Ackermann drive (front wheels used for turning) and high speed capabilities, up to 40mph.<br>
-                <div class="imcap">
-                    <img src="media/chassis.png" alt="Chassis" /><br>
-                    <h4>Basic car chassis [https://drive.google.com/file/d/0B6jv7Ea8ZHnNZmZTbUdLWktyLW8/view]</h4>
-                </div>
-            </p>
+                <h2>Chassis</h2>
+                <p>
+                    The cars used ion this project were built off of the Traxxas Rally 74076 chassis. This chassis was used because of the Ackermann drive (front wheels used for turning) and high speed capabilities, up to 40mph.<br>
+                    <div class="imcap">
+                        <img src="media/chassis.png" alt="Chassis" /><br>
+                        <h4>Basic car chassis [https://drive.google.com/file/d/0B6jv7Ea8ZHnNZmZTbUdLWktyLW8/view]</h4>
+                    </div>
+                </p>
 
-            <h2>Processor</h2>
-            <p>
-                The processor used on the car was a Nvidia Jetson TX1. This is an embedded system that uses a GPU to complete the processing. This means that the board has hundreds of cores that complete processes rather than two or four cores. This makes visual computing very fast.<br>
-                <div class="imcap">
-                    <img src="media/jetson.jpg" alt="Jetson Module" /><br>
-                    <h4>Nvidia Jetson TX1 Module [http://www.nvidia.com/object/jetson-tx1-module.html]</h4>
-                </div>
-            </p>
+                <h2>Processor</h2>
+                <p>
+                    The processor used on the car was a Nvidia Jetson TX1. This is an embedded system that uses a GPU to complete the processing. This means that the board has hundreds of cores that complete processes rather than two or four cores. This makes visual computing very fast.<br>
+                    <div class="imcap">
+                        <img src="media/jetson.jpg" alt="Jetson Module" /><br>
+                        <h4>Nvidia Jetson TX1 Module [http://www.nvidia.com/object/jetson-tx1-module.html]</h4>
+                    </div>
+                </p>
 
-            <h2>Sensors</h2>
-            <p>
-                Numerous sensors were used to allow the car to be able to sense its envrironnment.
-            </p>
+                <h2>Sensors</h2>
+                <p>
+                    Numerous sensors were used to allow the car to be able to sense its envrironnment.
+                </p>
 
-            <h3>Active Stereo Camera</h3>
-            <p>
-                The active stereo camera uses a projector and lense to produce and read the disturbances in structured light. This allows the camera to give distances in a point cloud. A point cloud is a data structure that holds points at different angles with distances associated. [www.depthbiomechanics.co.uk/?p=102]
-                <div class="imcap">
-                    <img src="media/active_stereo.jpg" alt="Structured Light" />
-                    <h4>[www.depthbiomechanics.co.uk/?p=102]</h4>
-                </div>
-            </p>
+                <h3>Active Stereo Camera</h3>
+                <p>
+                    The active stereo camera uses a projector and lense to produce and read the disturbances in structured light. This allows the camera to give distances in a point cloud. A point cloud is a data structure that holds points at different angles with distances associated. [www.depthbiomechanics.co.uk/?p=102]
+                    <div class="imcap">
+                        <img src="media/active_stereo.jpg" alt="Structured Light" />
+                        <h4>[www.depthbiomechanics.co.uk/?p=102]</h4>
+                    </div>
+                </p>
 
-            <h3>Passive Stereo Camera</h3>
-            <p>
-                Passive stereo cameras sense distance using the discrepancies in the images that two cameras capture. This is accomplished by matching objects on two images and finding the offset between them. <code>depth = f (b / d)</code> where <code>depth</code> is the distance to the object, <code>f</code> is the focal length of the camera, <code>b</code> is the distance between the cameras (baseline), and <code>d</code> is the disparity in pixels. [www.depthbiomechanics.co.uk/?p=102]
-                <div class="imcap">
-                    <img src="media/passive_stereo.jpg" alt="Passive camera" />
-                    <h4>Process of finding distance using passive cameras [www.depthbiomechanics.co.uk/?p=102]</h4>
-                </div>
+                <h3>Passive Stereo Camera</h3>
+                <p>
+                    Passive stereo cameras sense distance using the discrepancies in the images that two cameras capture. This is accomplished by matching objects on two images and finding the offset between them. <code>depth = f (b / d)</code> where <code>depth</code> is the distance to the object, <code>f</code> is the focal length of the camera, <code>b</code> is the distance between the cameras (baseline), and <code>d</code> is the disparity in pixels. [www.depthbiomechanics.co.uk/?p=102]
+                    <div class="imcap">
+                        <img src="media/passive_stereo.jpg" alt="Passive camera" />
+                        <h4>Process of finding distance using passive cameras [www.depthbiomechanics.co.uk/?p=102]</h4>
+                    </div>
 
-            </p>
+                </p>
 
-            <h3>Inertial Measurement Unit (IMU)</h3>
-            <p>
-                The IMU is used to measure linear acceleration and angular acceleration.
-            </p>
-            <h3>2D Lidar</h3>
+                <h3>Inertial Measurement Unit (IMU)</h3>
+                <p>
+                    The IMU is used to measure linear acceleration and angular acceleration. It accomplishes this through the use of capacitors and springs on nanoscale that shift when accelerating.
+                    <div class="imcap">
+                        <img src="media/imu.png" alt="IMU deflection using springs" />
+                        <h4>Deflection changing capacitance shown [https://drive.google.com/file/d/0B6jv7Ea8ZHnNZmZTbUdLWktyLW8/view] </h4>
+                    </div>
+                </p>
 
-            <p>
-                <div class="imcap">
-                    <img src="media/car.png" alt="Image of the RACECAR with sensors" /><br>
-                    <h4>Car with all sensors (active stereo camera was not used and removed from the cars) [https://drive.google.com/file/d/0B6jv7Ea8ZHnNZmZTbUdLWktyLW8/view]</h4>
-                </div>
-            </p>
+                <h3>2D Lidar</h3>
+                <p>
+                    The Lidar system uses light to measure distances from the robot. This is accomplished by shooting a lazer in an arbitrary direction and timing how long the light takes to return to the robot.
+                    <div class="imcap">
+                        <img src="media/lidar_mechanism.png" alt="Lidar Machanism" />
+                        <h4>Mechanism used to measure the distance  [https://drive.google.com/file/d/0B6jv7Ea8ZHnNZmZTbUdLWktyLW8/view]</h4>
+                    </div>
+                </p>
+
+                <h3>Full Car</h3>
+                <p>
+                    All of the sensors were placed on teh robot as shown below. The passive stereo camera was plasced where the active stereo camera is shown and the active stereo camera was removed. A wireless router was placed on top of the robot to allow the robot to have a lower disconnection rate.
+                    <div class="imcap">
+                        <img src="media/car.png" alt="Image of the RACECAR with sensors" /><br>
+                        <h4>Car with all sensors [https://drive.google.com/file/d/0B6jv7Ea8ZHnNZmZTbUdLWktyLW8/view]</h4>
+                    </div>
+                </p>
+            </div>
             <hr>
 
             <!--                            Week 1                           -->
-            <h1 id="week1">Week 1</h1>
-            <h2>Goals</h2>
-            <p>
-                There were several goals for week 1. The first goal was to level the playing field for all students by reteaching everything from the summer work. The next goal was to learn how to use the lidar to interpret the environment and follow a wall.
-            </p>
-            <h2>Lectures</h2>
-            <p>
-                The first day of the program was intended to explain the basics of the cars we were using. The Jetson TX1 is the processor we used. This is a special processor with hundreds of cores that allow for fast parallel processing. ROS is based upon the idea of parallel processing and, as such, works well with the Jetson. We decided to use a special distribution of Ubuntu for the Jetson. ROS runs on Linux and Ubuntu is a very easy version to use. On top of the cars are wireless routers that allow the robot and our computers to connect to each other and the internet. An electronic speed controller (VESC) is used to control the driving speed and steering angle of the robot. A passive stereo camera is used to sense depth and input images. A lidar is used to perceive distances in a horizontal plane in a 270&deg; angle.
-            </p>
-            <p>
-                The next day we learned about the basics of Linux, Python, ROS, and robotics. We learned the basics of the Linux shell, Python syntax and tricks, ROS topics and nodes, and robotic architecture.
-            </p>
-            <p>
-                Kyle Edelberg taught on control systems and how he used them at the MIT Jet Propulsion Lab in California (JPL). In his work at JPL, he learned to use proportional, differential, and integral controllers (PID controllers). PID controllers work by first having a way of defining an error. This error is passed into the PID controller and a steering command is output. The controller has three parts. Proportional is the part that points the car toward the way to reduce the error. Derivative uses the change in the error to slow the acceleration toward the point of no error. This effectively prevents destructive oscillatory motion and overshooting. The integral portion prevent steady state error. These are errors that persist and the robot cannot correct for. They are removed by keeping a tally of the errors over a frame of time.
-            </p>
-            <h2>Labs</h2>
-            <p>
-                We connected to the cars and learned how to publish topics. Topics are channels of communication between nodes that allow for easy transfer of data. Nodes are individual parts of a robot such as a sensor, motor, controller, or output device.
-            </p>
-            <p>
-                We ran nodes to demonstrate communication between ros nodes. We also learned how to simulate a physical environment using the gazebo simulator.
-            </p>
-            <p>
-                We used rviz to see the output from sensors on the robot and rosbagged all topics in order to understand what happens when the robot runs. Rosbag is a command in ROS that saves data published to topics in real time.
-            </p>
-            <p>
-                The team implemented a Bang-Bang(BB) controller and a PD (Proportional and Differential) controller. BB controllers are essentially binary controllers. If the car is too close, the BB will push the car full in the opposite direction and vice-versa if the car is too far. The controller has two states: full left and full right. PID controllers adjust to the error in a controlled manner that prevents large switches and inefficiencies.
-            </p>
-            <p>
-                The algorithm for the PD controller was implemented in the following way:
-                <script src="https://gist.github.com/Brenn10/4d3cec6b890f40b3e6ab8ff2bed7a501.js"></script>
-            </p>
-            <h2>Conclusion</h2>
-            <p>
-                The team implemented a wall follower that could switch which wall was being followed using a gamepad. This program used the shortest distance from the robot to the wall in a range of the laser scan to find the error. This error was then fed in to the PD controller which determined the steering angle for the car to drive. The team placed 4th in the first round with a time of 8.645s [https://docs.google.com/presentation/d/12sjPkcfbD6K2bD13X8J90o-6XzXjV5yAjKpmQWqVzgc/edit?usp=sharing]. In the drag races, we progressed past the first round to be defeated by the “Fastest Loser” in the second round. The team dynamic was very healthy and enjoyable. We all learned how to deal with others' opinions and criticisms. We chose each other when were allowed to choose teams for the final weeks.
-            </p>
+
+            <div id="week1">
+                <h1>Week 1</h1>
+                <h2>Goals</h2>
+                <p>
+                    There were several goals for week 1. The first goal was to level the playing field for all students by reteaching everything from the summer work. The next goal was to learn how to use the lidar to interpret the environment and follow a wall.
+                </p>
+                <h2>Lectures</h2>
+                <p>
+                    The first day of the program was intended to explain the basics of the cars we were using. The Jetson TX1 is the processor we used. This is a special processor with hundreds of cores that allow for fast parallel processing. ROS is based upon the idea of parallel processing and, as such, works well with the Jetson. We decided to use a special distribution of Ubuntu for the Jetson. ROS runs on Linux and Ubuntu is a very easy version to use. On top of the cars are wireless routers that allow the robot and our computers to connect to each other and the internet. An electronic speed controller (VESC) is used to control the driving speed and steering angle of the robot. A passive stereo camera is used to sense depth and input images. A lidar is used to perceive distances in a horizontal plane in a 270&deg; angle.
+                </p>
+                <p>
+                    The next day we learned about the basics of Linux, Python, ROS, and robotics. We learned the basics of the Linux shell, Python syntax and tricks, ROS topics and nodes, and robotic architecture.
+                </p>
+                <p>
+                    Kyle Edelberg taught on control systems and how he used them at the MIT Jet Propulsion Lab in California (JPL). In his work at JPL, he learned to use proportional, differential, and integral controllers (PID controllers). PID controllers work by first having a way of defining an error. This error is passed into the PID controller and a steering command is output. The controller has three parts. Proportional is the part that points the car toward the way to reduce the error. Derivative uses the change in the error to slow the acceleration toward the point of no error. This effectively prevents destructive oscillatory motion and overshooting. The integral portion prevent steady state error. These are errors that persist and the robot cannot correct for. They are removed by keeping a tally of the errors over a frame of time.
+                </p>
+                <h2>Labs</h2>
+                <p>
+                    We connected to the cars and learned how to publish topics. Topics are channels of communication between nodes that allow for easy transfer of data. Nodes are individual parts of a robot such as a sensor, motor, controller, or output device.
+                </p>
+                <p>
+                    We ran nodes to demonstrate communication between ros nodes. We also learned how to simulate a physical environment using the gazebo simulator.
+                </p>
+                <p>
+                    We used rviz to see the output from sensors on the robot and rosbagged all topics in order to understand what happens when the robot runs. Rosbag is a command in ROS that saves data published to topics in real time.
+                </p>
+                <p>
+                    The team implemented a Bang-Bang(BB) controller and a PD (Proportional and Differential) controller. BB controllers are essentially binary controllers. If the car is too close, the BB will push the car full in the opposite direction and vice-versa if the car is too far. The controller has two states: full left and full right. PID controllers adjust to the error in a controlled manner that prevents large switches and inefficiencies.
+                </p>
+                <p>
+                    The algorithm for the PD controller was implemented in the following way:
+                    <script src="https://gist.github.com/Brenn10/4d3cec6b890f40b3e6ab8ff2bed7a501.js"></script>
+                </p>
+                <h2>Conclusion</h2>
+                <p>
+                    The team implemented a wall follower that could switch which wall was being followed using a gamepad. This program used the shortest distance from the robot to the wall in a range of the laser scan to find the error. This error was then fed in to the PD controller which determined the steering angle for the car to drive. The team placed 4th in the first round with a time of 8.645s [https://docs.google.com/presentation/d/12sjPkcfbD6K2bD13X8J90o-6XzXjV5yAjKpmQWqVzgc/edit?usp=sharing]. In the drag races, we progressed past the first round to be defeated by the “Fastest Loser” in the second round. The team dynamic was very healthy and enjoyable. We all learned how to deal with others' opinions and criticisms. We chose each other when were allowed to choose teams for the final weeks.
+                </p>
+            </div>
+            <hr>
 
             <!--                           Week 2                            -->
-            <h1 id="week2">Week 2</h1>
-            <h2>Goals</h2>
-            <p>
-                The goals for week 2 were to be able to use blob detection, visual servo toward a blob, and recognize different colored blobs.
-            </p>
-            <p>
-                Blobs are colored swatches. Contour has a similar meaning, a contour is an area of a similar color of an area that has fit inside a ceratin criteria. We used pieces of paper for the blobs. Visual servoing is following a blob toward a target.
-            </p>
-            <h2>Lectures</h2>
-            <p>
-                The first day of lectures, we learned the theory of computer vision using OpenCV.
-            </p>
-            <h2>Labs</h2>
-            <h2>Conclusion</h2>
+
+            <div id="week2">
+                <h1>Week 2</h1>
+                <h2>Goals</h2>
+                <p>
+                    The goals for week 2 were to be able to use blob detection, visual servo toward a blob, and recognize different colored blobs.
+                </p>
+                <p>
+                    Blobs are colored swatches. Contour has a similar meaning, a contour is an area of a similar color of an area that fits inside a ceratin criteria. We used pieces of paper for the blobs. Visual servoing is following a blob toward a target.
+                </p>
+                <h2>Lectures</h2>
+                <p>
+                    Monday focused on colorspaces and segmentation. Colorspaces are the various was of storing colors for pixels. The normal way that most people think about color and most computers use is called the RGB color space. This color space stores values that relate to the intensities of each form of light in a pixel. <code>rgb(255,128,0)</code> means that red has full intensity, green is at half intensity and blue is off. This would make a color like  <span style="color:rgb(255,128,0)">this</span>. The BGR colorspace works in teh same way, but reverses the order of each color. <code>bgr(255,128,0)</code> means that blue has full intensity, green is at half intensity and red is off. This would make a color like  <span style="color:rgb(0,128,255)">this</span>. These colorspaces are difficult to use in visual processing because lighter and darker conditions cause wide variances that cannot be easily accounted for, enter HSV. HSV stands for hue, value saturation. Hue is the absolute color from 0 to 360. In the code however, the wheel was condensed to 0 to 180. Value is how dark or light the color is (black to vibrant). Saturation is how washed out the color is. This goes from white to vivid. <code>HSV(180,170,170)</code> has a hue of blue-green, a medium-high value that makes it darker and a medium-high value that makes it washed out a bit. The color looks like <span style="color:hsl(180,75%,33%)">this</span>. The HSV colorspace is very useful in iommage processing as it is easy to designate what approximate hue you want. Hue specifies the color, saturation is used to account for whitewash, and value is used to adjust for brightness.
+                    <div class="imcap">
+                        <img src="media/hsv_colorspace.png" alt="HSV colorspace" />
+                        <h4>HSV Colorspace Graph [http://08073gjam2.blogspot.com/2015/01/colour-space-greyscale-rgb-yuv.html]</h4>
+                    </div>
+
+                    Zed images, blob detection, visual servo
+                </p>
+                <h2>Labs</h2>
+                <h2>Conclusion</h2>
+            </div>
             <hr>
 
-            <!-- Week 3 -->
-            <h1 id="week3">Week 3</h1>
-            <h2>Goals</h2>
-            <h2>Lectures</h2>
-            <h2>Labs</h2>
-            <h2>Conclusion</h2>
+            <!--                          Week 3                             -->
+
+            <div id="week3">
+                <h1 id="week3">Week 3</h1>
+                <h2>Goals</h2>
+                <h2>Lectures</h2>
+                <h2>Labs</h2>
+                <h2>Conclusion</h2>
+            </div>
             <hr>
 
-            <!-- Title -->
-            <h1 id="week4">Week 4</h1>
-            <h2>Goals</h2>
-            <h2>Lectures</h2>
-            <h2>Labs</h2>
-            <h2>Conclusion</h2>
+            <!--                           Week 4                            -->
+
+            <div id="week4">
+                <h1 id="week4">Week 4</h1>
+                <h2>Goals</h2>
+                <h2>Lectures</h2>
+                <h2>Labs</h2>
+                <h2>Conclusion</h2>
+            </div>
             <hr>
 
-            <!-- Title -->
-            <h1 id="resources">Resources</h1>
-            <ol>
-                <li><a href="https://github.com/Brenn10/MIT_BeaverWorks">My Github Repository</a></li>
-            </ol>
+            <!--                        Resources                            -->
+
+            <div id="resources">
+                <h1 id="resources">Resources</h1>
+                <ol>
+                    <li><a href="https://github.com/Brenn10/MIT_BeaverWorks">My Github Repository</a></li>
+                </ol>
+            </div>
         </div>
     </body>
 </html>
