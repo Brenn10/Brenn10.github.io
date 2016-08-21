@@ -52,7 +52,7 @@
                 The Beaver Works Summer Institue (BWSI) began as an idea by Dr. Robert "Bob" Shin of MIT Lincoln Labs to create a summer program for programmers, an area that was previously undeveloped. His goal was to create a program where high school students from around the United States could work together with top researchers and professionals in the field of robotics to develop autonomous robotics systems. In order to find students for the pilot year of BWSI, Dr. Shin contacted the National Consortium of Secondary STEM Schools (NCSSS) and was able to find students from many of the member schools. Students came from 10 states: Mississippi, Illinois, Arkansas, California, New York, Maine, North Carolina, South Carolina, New Jersey, and Massachuessets.
             </p>
             <p>
-                The program lasted for 4 weeks. The students worked each weekday from 9:00am to 5:00pm. During the weekdays, the students listened to lectures and seminars and worked on labs to enforce the material and accomplish weekly goals. On Tuesdays and Thursdays teh students would also attend a lesson on communication with Dr. Jane Connor. Each week, the students were given a section of robotics to learn and a challenge.
+                The program lasted for 4 weeks. The students worked each weekday from 9:00am to 5:00pm. During the weekdays, the students listened to lectures and seminars and worked on labs to enforce the material and accomplish weekly goals. On Tuesdays and Thursdays the students would also attend a lesson on communication with Dr. Jane Connor. Each week, the students were given a section of robotics to learn and a challenge.
             </p>
             <p>
                 Week 1 focused on the basics of the basics of the Robot Operating System (ROS), Linux (Ubuntu), and Python. The challenge for the week was to make the robot follow the wall using the Lidar.
@@ -69,6 +69,60 @@
 
             <h1 id="car">The Car</h1>
 
+            <h2>Chassis</h2>
+            <p>
+                The cars used ion this project were built off of the Traxxas Rally 74076 chassis. This chassis was used because of the Ackermann drive (front wheels used for turning) and high speed capabilities, up to 40mph.<br>
+                <div class="imcap">
+                    <img src="media/chassis.png" alt="Chassis" /><br>
+                    <h4>Basic car chassis [https://drive.google.com/file/d/0B6jv7Ea8ZHnNZmZTbUdLWktyLW8/view]</h4>
+                </div>
+            </p>
+
+            <h2>Processor</h2>
+            <p>
+                The processor used on the car was a Nvidia Jetson TX1. This is an embedded system that uses a GPU to complete the processing. This means that the board has hundreds of cores that complete processes rather than two or four cores. This makes visual computing very fast.<br>
+                <div class="imcap">
+                    <img src="media/jetson.jpg" alt="Jetson Module" /><br>
+                    <h4>Nvidia Jetson TX1 Module [http://www.nvidia.com/object/jetson-tx1-module.html]</h4>
+                </div>
+            </p>
+
+            <h2>Sensors</h2>
+            <p>
+                Numerous sensors were used to allow the car to be able to sense its envrironnment.
+            </p>
+
+            <h3>Active Stereo Camera</h3>
+            <p>
+                The active stereo camera uses a projector and lense to produce and read the disturbances in structured light. This allows the camera to give distances in a point cloud. A point cloud is a data structure that holds points at different angles with distances associated. [www.depthbiomechanics.co.uk/?p=102]
+                <div class="imcap">
+                    <img src="media/active_stereo.jpg" alt="Structured Light" />
+                    <h4>[www.depthbiomechanics.co.uk/?p=102]</h4>
+                </div>
+            </p>
+
+            <h3>Passive Stereo Camera</h3>
+            <p>
+                Passive stereo cameras sense distance using the discrepancies in the images that two cameras capture. This is accomplished by matching objects on two images and finding the offset between them. <code>depth = f (b / d)</code> where <code>depth</code> is the distance to the object, <code>f</code> is the focal length of the camera, <code>b</code> is the distance between the cameras (baseline), and <code>d</code> is the disparity in pixels. [www.depthbiomechanics.co.uk/?p=102]
+                <div class="imcap">
+                    <img src="media/passive_stereo.jpg" alt="Passive camera" />
+                    <h4>Process of finding distance using passive cameras [www.depthbiomechanics.co.uk/?p=102]</h4>
+                </div>
+
+            </p>
+
+            <h3>Inertial Measurement Unit (IMU)</h3>
+            <p>
+                The IMU is used to measure linear acceleration and angular acceleration.
+            </p>
+            <h3>2D Lidar</h3>
+
+            <p>
+                <div class="imcap">
+                    <img src="media/car.png" alt="Image of the RACECAR with sensors" /><br>
+                    <h4>Car with all sensors (active stereo camera was not used and removed from the cars) [https://drive.google.com/file/d/0B6jv7Ea8ZHnNZmZTbUdLWktyLW8/view]</h4>
+                </div>
+            </p>
             <hr>
 
             <!--                            Week 1                           -->
