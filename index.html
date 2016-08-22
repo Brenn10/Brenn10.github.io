@@ -1,4 +1,11 @@
+<!DOCTYPE html>
 
+<!--
+
+Author: Brennan Cain
+Email: brenn.cain@gmail.com
+
+-->
 <html>
     <head>
         <link rel="icon"
@@ -16,6 +23,8 @@
         <!-- Our main css file, holds the core styles -->
         <link rel='stylesheet' href='styles/main.css'>
 
+        <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
         <title>Brennan Cain</title>
 
 
@@ -29,6 +38,7 @@
                 <li role="presentation"><a href="#week2">Week 2</a></li>
                 <li role="presentation"><a href="#week3">Week 3</a></li>
                 <li role="presentation"><a href="#week4">Week 4</a></li>
+                <li role="presentation"><a href="#conclusion">Conclusion</a></li>
                 <li role="presentation"><a href="#resources">Resources</a></li>
             </ul>
         </div>
@@ -40,6 +50,7 @@
                 <li role="presentation"><a href="#week2">Week 2</a></li>
                 <li role="presentation"><a href="#week3">Week 3</a></li>
                 <li role="presentation"><a href="#week4">Week 4</a></li>
+                <li role="presentation"><a href="#conclusion">Conclusion</a></li>
                 <li role="presentation"><a href="#resources">Resources</a></li>
             </ul>
         </div>
@@ -50,7 +61,7 @@
             <div id="overview">
                 <h1>The program</h1>
                 <p>
-                    The Beaver Works Summer Institue (BWSI) began as an idea by Dr. Robert "Bob" Shin of MIT Lincoln Labs to create a summer program for programmers, an area that was previously undeveloped. His goal was to create a program where high school students from around the United States could work together with top researchers and professionals in the field of robotics to develop autonomous robotics systems. In order to find students for the pilot year of BWSI, Dr. Shin contacted the National Consortium of Secondary STEM Schools (NCSSS) and was able to find students from many of the member schools. Students came from 10 states: Mississippi, Illinois, Arkansas, California, New York, Maine, North Carolina, South Carolina, New Jersey, and Massachuessets.
+                    The Beaver Works Summer Institue (BWSI) began as an idea by Dr. Robert "Bob" Shin of MIT Lincoln Labs to create a summer program for programmers, an area that was previously undeveloped. His goal was to create a program where high school students from around the United States could work together with top researchers and professionals in the field of robotics to develop autonomous robotics systems. In order to find students for the pilot year of BWSI, Dr. Shin contacted the National Consortium of Secondary STEM Schools (NCSSS) and was able to find students from many of the member schools. Students came from 11 states: Mississippi, Illinois, Arkansas, California, New York, Maine, North Carolina, South Carolina, Virginia, New Jersey, and Massachuessets.
                 </p>
                 <p>
                     The program lasted for 4 weeks. The students worked each weekday from 9:00am to 5:00pm. During the weekdays, the students listened to lectures and seminars and worked on labs to enforce the material and accomplish weekly goals. On Tuesdays and Thursdays the students would also attend a lesson on communication with Dr. Jane Connor. Each week, the students were given a section of robotics to learn and a challenge.
@@ -138,7 +149,7 @@
 
                 <h3>Full Car</h3>
                 <p>
-                    All of the sensors were placed on teh robot as shown below. The passive stereo camera was plasced where the active stereo camera is shown and the active stereo camera was removed. A wireless router was placed on top of the robot to allow the robot to have a lower disconnection rate.
+                    All of the sensors were placed on the robot as shown below. The passive stereo camera was plasced where the active stereo camera is shown and the active stereo camera was removed. A wireless router was placed on top of the robot to allow the robot to have a lower disconnection rate.
                     <div class="imcap">
                         <img src="media/car.png" alt="Image of the RACECAR with sensors" /><br>
                         <h4>Car with all sensors [https://drive.google.com/file/d/0B6jv7Ea8ZHnNZmZTbUdLWktyLW8/view]</h4>
@@ -163,7 +174,7 @@
                     The next day we learned about the basics of Linux, Python, ROS, and robotics. We learned the basics of the Linux shell, Python syntax and tricks, ROS topics and nodes, and robotic architecture.
                 </p>
                 <p>
-                    Kyle Edelberg taught on control systems and how he used them at the MIT Jet Propulsion Lab in California (JPL). The basic control systems are Open and closed loop control. In open loop control systems, there is feedback that determines the next adjustment. In closed loop control systems, there is no feedback to help with control adn thus they are more unstable. He lectured on the use of proportional, differential, and integral controllers (PID controllers). PID controllers work by first having a way of defining an error. This error is passed into the PID controller and a steering command is output. The controller has three parts. Proportional is the part that points the car toward the way to reduce the error. Derivative uses the change in the error to slow the acceleration toward the point of no error. This effectively prevents destructive oscillatory motion and overshooting. The integral portion prevent steady state error. These are errors that persist and the robot cannot correct for. They are removed by keeping a tally of the errors over a frame of time.
+                    Kyle Edelberg taught on control systems and how he used them at the MIT Jet Propulsion Lab in California (JPL). The basic control systems are Open and closed loop control. In open loop control systems, there is feedback that determines the next adjustment. In closed loop control systems, there is no feedback to help with control and thus they are more unstable. He lectured on the use of proportional, differential, and integral controllers (PID controllers). PID controllers work by first having a way of defining an error. This error is passed into the PID controller and a steering command is output. The controller has three parts. Proportional is the part that points the car toward the way to reduce the error. Derivative uses the change in the error to slow the acceleration toward the point of no error. This effectively prevents destructive oscillatory motion and overshooting. The integral portion prevent steady state error. These are errors that persist and the robot cannot correct for. They are removed by keeping a tally of the errors over a frame of time.
                 </p>
                 <h2>Labs</h2>
                 <p>
@@ -199,23 +210,28 @@
                 </p>
                 <h2>Lectures</h2>
                 <p>
-                    Monday focused on colorspaces and segmentation. Colorspaces are the various was of storing colors for pixels. The normal way that most people think about color and most computers use is called the RGB color space. This color space stores values that relate to the intensities of each form of light in a pixel. <code>rgb(255,128,0)</code> means that red has full intensity, green is at half intensity and blue is off. This would make a color like  <span style="color:rgb(255,128,0)">this</span>. The BGR colorspace works in teh same way, but reverses the order of each color. <code>bgr(255,128,0)</code> means that blue has full intensity, green is at half intensity and red is off. This would make a color like  <span style="color:rgb(0,128,255)">this</span>. These colorspaces are difficult to use in visual processing because lighter and darker conditions cause wide variances that cannot be easily accounted for, enter HSV. HSV stands for hue, value saturation. Hue is the absolute color from 0 to 360. In the code however, the wheel was condensed to 0 to 180. Value is how dark or light the color is (black to vibrant). Saturation is how washed out the color is. This goes from white to vivid. <code>hsv(180,170,170)</code> has a hue of blue-green, a medium-high value that makes it darker and a medium-high value that makes it washed out a bit. The color looks like <span style="color:hsl(180,75%,33%)">this</span>. The HSV colorspace is very useful in iommage processing as it is easy to designate what approximate hue you want. Hue specifies the color, saturation is used to account for whitewash, and value is used to adjust for brightness.
+                    Monday focused on colorspaces and segmentation. Colorspaces are the various was of storing colors for pixels. The normal way that most people think about color and most computers use is called the RGB color space. This color space stores values that relate to the intensities of each form of light in a pixel. <code>rgb(255,128,0)</code> means that red has full intensity, green is at half intensity and blue is off. This would make a color like  <span style="color:rgb(255,128,0)">this</span>. The BGR colorspace works in the same way, but reverses the order of each color. <code>bgr(255,128,0)</code> means that blue has full intensity, green is at half intensity and red is off. This would make a color like  <span style="color:rgb(0,128,255)">this</span>. These colorspaces are difficult to use in visual processing because lighter and darker conditions cause wide variances that cannot be easily accounted for, enter HSV. HSV stands for hue, value saturation. Hue is the absolute color from 0 to 360. In the code however, the wheel was condensed to 0 to 180. Value is how dark or light the color is (black to vibrant). Saturation is how washed out the color is. This goes from white to vivid. <code>hsv(180,170,170)</code> has a hue of blue-green, a medium-high value that makes it darker and a medium-high value that makes it washed out a bit. The color looks like <span style="color:hsl(180,75%,33%)">this</span>. The HSV colorspace is very useful in iommage processing as it is easy to designate what approximate hue you want. Hue specifies the color, saturation is used to account for whitewash, and value is used to adjust for brightness.
                     <div class="imcap">
                         <img src="media/hsv_colorspace.png" alt="HSV colorspace" />
                         <h4>HSV Colorspace Graph [http://08073gjam2.blogspot.com/2015/01/colour-space-greyscale-rgb-yuv.html]</h4>
                     </div>
                 </p>
                 <p>
-                    Segmentation is using as binary mask to select parts of an image. A mask is an boolean, two-dimensional array that represents an image. If a certain pixel matches a pattern, the bit at that indwex in the array becomes true. Masks are used to show areas of an image where a certain criteria is true. These criteria are ranges of HSV values. An example would be: <code>mask = cv2.inRange(image_in_hsv, numpy.array([0, 100, 200]), numpy.array([15, 255, 255]))</code>. This goes through teh image and finds any pixel with hues between 0 and 15, saturation between 100 and 255, and value between 200 and 255. In our lab this found a piece of paper on the wall.
+                    Segmentation is using as binary mask to select parts of an image. A mask is an boolean, two-dimensional array that represents an image. If a certain pixel matches a pattern, the bit at that indwex in the array becomes true. Masks are used to show areas of an image where a certain criteria is true. These criteria are ranges of HSV values. An example would be: <code>mask = cv2.inRange(image_in_hsv, numpy.array([0, 100, 200]), numpy.array([15, 255, 255]))</code>. This goes through the image and finds any pixel with hues between 0 and 15, saturation between 100 and 255, and value between 200 and 255. In our lab this found a piece of paper on the wall.
                 </p>
                 <p>
                     Tuesday focused on programming the robot to use visual input. The lectures focused on using the passive stereo (ZED) camera with ROS, detecting blobs, and visual servoing. The passive camera published to the following topics in the camera namespace: rgb/image_rect_color, depth/image_rect_color, rgb_camera_info. The programs subscribed to the /camera/rgb/image_rect_color topic which published RGB images from the camera. Blob detection is using openCV to group clusters of true indexes in masks. This allows programmers to determine the size, shape, and location of detected objects. The locations of these coontours are used for navigation called visual servoing. Visual servoing is the use of an inputted image to determine the appropriate action.
                 </p>
                 <h2>Labs</h2>
                 <p>
-                    The goals of the first lab was to subascribe to an image stream (the /camera/rgb/image_rect_color topic) and edit images as they come in from the zed camera. The three manipulations that were required were adding a shape overlaying the image, flipping the image about an axis, and adding a rosy appearance by increasing the red value of each pixel  [https://docs.google.com/document/d/1lAQBoGqxXGKyVxfsUCv-I--hZI69iuSgGQwtVLWHE8s/edit#]. My team was unable to complete these three objective due to problems with the passive stereo camera. The next lab involved creating a custom message, publishing and subscribing to it, and detecting blobs. My team was able to complete this challenge.
+                    The goals of the first lab was to subscribe to an image stream (the /camera/rgb/image_rect_color topic) and edit images as they come in from the zed camera. The three manipulations that were required were adding a shape overlaying the image, flipping the image about an axis, and adding a rosy appearance by increasing the red value of each pixel  [https://docs.google.com/document/d/1lAQBoGqxXGKyVxfsUCv-I--hZI69iuSgGQwtVLWHE8s/edit#]. My team was unable to complete these three objective due to problems with the passive stereo camera. The next lab involved creating a custom message, publishing and subscribing to it, and detecting blobs. My team was able to complete this challenge. We accomplished this by writing the following script:
+                    <script src="https://gist.github.com/Brenn10/0d1cc65b28f2ee7ec2166c98cd8e82d3.js"></script>
+                    On wednesday, the weekly challenge was given, the goal was to drive toward a colored piece of paper and, depending on the color (red or green), turn right or left. This challenge was especially hard for most groups and only 2 of 9 teams were able to complete it. My team was not one of the two. The team was able to visual servo toward the wall and was also able to follow the wall on either side, however, we were not able to connect the two parts of the program to allow simple flow from visual servo to wall following.
                 </p>
                 <h2>Conclusion</h2>
+                <p>
+                    My team was able to complete the main objectives of the labs but we were unable to complete the weekly challenge. The failure to complete the final challenge was due to a lack of communication within the group. Though the team had a large amount of knowledge, we were unable to connect and work together well.
+                </p>
             </div>
             <hr>
 
@@ -224,9 +240,35 @@
             <div id="week3">
                 <h1>Week 3</h1>
                 <h2>Goals</h2>
+                <p>
+                    The objectives of week 3 were to learn localization and mapping. Due to technical issues, the goals shifted to learning about exploration and different ways of navigating free space. The final goals were to learn potential field navigation, free space navigation, and gradient fields and to detect numerous colored blobs as the robot explored the environment.
+                </p>
                 <h2>Lectures</h2>
+                <p>
+                    The lectures this week did not necessarily correlate to the material of the labs. Monday focused on basics of simultaneous location and mapping (SLAM). This means moving and drawing a map as the robot moves. The rest of the week focused on exploratory algorithms (most days were lab time).
+                </p>
                 <h2>Labs</h2>
+                <p>
+                    Monday's lab was to create a map using the SLAM approach. SLAM uses Lidar and odometry to assume the robot's position and draw a map. As the robot moves through an environment, it read the lidar and adds the reading to the map, the robot then adjusts its current assumed position to align with the more detailed map. It continues through many iterations of this to build a highly detailed map of the surroundings. Most robots were able to build a very low quality map which was due to very imprecise odometry.
+                </p>
+                <p>
+                    Tuesday's goal was to be able to navigate a racetrack that was full of obstacles to avoid. Most teams were able to accomplish this through various methods. My team used the potential field method. This method used each point in the lidar scan as a point charge and placed a large point charge behind the robot. All charges were positive and pushed the robot away from obstacles and forward. The equations that describe the direction and speed are \(speed=\sum{sin(1/d^2)}+pushingCharge\) and  \(direction=\sum{cos(1/d^2)}\). A major issue to this approach is the chance of reaching a local minimum where there is a low enough potential field vector that the car stops. To rectify this, the team added a stuck function that checked if the car was stuck and, if so, backed up for a second before resuming.
+                    <script src="https://gist.github.com/Brenn10/adb773e1ced1613ea04e59ad370b9731.js"></script>
+                    <div class="imcap">
+                        <img src="media/pot.jpg" alt="Potential Field" />
+                        <h4>[http://slideplayer.com/slide/2327748]</h4>
+                    </div>
+                </p>
+                <p>
+                    Other approaches the group tried were gradient fields and largest free space. Gradient fields assigned slopes at each point in the area around the robot, this led the robot to "slide" toward the goal and away from obstacles. My team decided against this approach due to added complexity and similar function to potential fields. Largest free space was also implemented and rejected due to lack of robustness. This approach found the largest free space each iteration and set the steering in that direction. This approach was faster and simpler but could not recover from crashes or slowdown on sharp turns.
+                </p>
+                <p>
+                    The final challenge of the week was to explore and identify colored blobs in the track. My team was able to correctly identify most blobs and came in second among the other teams.
+                </p>
                 <h2>Conclusion</h2>
+                <p>
+                    This week was a great success. Most teams were able to discover blobs as they traveled around and report them to a custom topic.
+                </p>
             </div>
             <hr>
 
@@ -234,19 +276,64 @@
 
             <div id="week4">
                 <h1 id="week4">Week 4</h1>
-                <h2>Goals</h2>
-                <h2>Lectures</h2>
-                <h2>Labs</h2>
-                <h2>Conclusion</h2>
+                <h2>Before raceday</h2>
+                <p>
+                    The final lecture was given by Dr. Sertac Karaman, Lead Instructor. This Lecture focused on the importance of autonomous vehicvles and how the knowledge from the camp can be applied outside of the camp. The rest of the week was dedicated to preparation for the races and technical challenges. The code freeze for the tech challenges was at 11:15 on tuesday and for the grand prix was at 5:00 on friday.
+                </p>
+                <p>
+                    The team worked to hack together the different programs we had written throughout the past four weeks to create a single program that could be used to compete. We decided on using potential fields for both the time trial and grand prix in order to avoid cars and quickly navigate. Although the challenge specification was to detertmine whether or not ot go down the shortcut based on the color of the blob, we decided to always go right to be safe by adding an extra point charge to the left of the car to push it to the right.
+                </p>
+                <h2>Technical Challenges</h2>
+                <p>
+                    The first tech challenge was to navigate and detect blobs. The team excelled on this part and detected most of the blobs in the area with few misidentifications. The second challenge was to detect the color at the entrance of the shortcut. The team was unable to program a correct solution to this challenge and decided to sit out instead. During the navigate and detect challenge, the servo on out robot began to overheat and then was struck by another team's robot causing it to die. We then had to change robots for the final grand prix.
+                </p>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/TqN69NZ3m8w" frameborder="0" allowfullscreen></iframe>
+                <h2>Time Trial</h2>
+                <p>
+                    For the time trial, we decided to use our grand prix code which used a potential field for navigation. This last minute change allowed use to very quickly navigate the turn and never go down the shortcut when we werent supposed to. We earned 3rd place in the time trials securing us a place on the front row for the grand prix.
+                    <div class="imcap">
+                        <img src="media/circuit.png" />
+                        <h4>Final Grand Prix Circuit Map</h4>
+                    </div>
+                    <div class="imcap">
+                        <img src="media/results.png" />
+                        <h4>Results of the Time Trials [https://docs.google.com/document/d/19OzNjNac9gUtkCEZR4WjfniDl3Ihfporp9AgbyFpJB0/edit#heading=h.cn8o2cbv0v6m]</h4>
+                    </div>
+                </p>
+                <h2>Heats</h2>
+                <p>
+                    The first heat was made up by the first, second, and third place teams. We competed in theis heat and placed second putting us in the middle of the front row for the grand prix, the ideal position for our potential field navgiator.
+                </p>
+                <h2>Grand Prix</h2>
+                <p>
+                    This event was just for fun. All 9 racecars were placed on teh track simultaneously and drove around until their batteries ran out. Many robots became turned around and blocked each other but overall, the robots all ran very well.
+                </p>
             </div>
             <hr>
+
+            <!--                       Conclusion                            -->
+            <div id="conclusion">
+                <h1>Conclusion</h1>
+                <h2>Technical</h2>
+                <p>Over the course of this program, I developed a good understanding of autonomous systems and how robots are programmed. I learned about technologies I had previously never had experience with including ROS, Nvidia Jetson TX1, SLAM, PID controllers, OpenCV, and Lidar. Before this program, I hadn’t realized how much programming was involved in robotics. I had always thought robotics was mainly hardware, but after the program, I realize that they are more software than anything else. This program made me realize I may want to go into robotics as a career.</p>
+                <h2>Personal</h2>
+                <p>BWSI was an incredible experience for me. I learned to not only program, but also how to be a better person.
+                Before BWSI, I had never worked on a major project with a group. The experience of having to deal with others and work together on a single project was incredible. I learned several things through working with a group: you need to know them as a person and not a professional, you need to feel like you are valued in order to be able to contribute freely, and most of all, you cannot reduce the values of others, ever.</p>
+                <p>At my high school, I am known as a “computer god”. I have thought of myself as a really good coder and generally the best in the room. At BWSI I realized that I can’t think like that if I’m to work with people, I need to realize that their worth is equal to or greater than mine. At the beginning of the program, I had a problem with shooting down ideas and it wasn’t until the last week that I finally got over it and stopped thinking my ideas were better than others.</p>
+                <h2>Improvements</h2>
+                <p>Make the program all residential. Many kids had never lived in a dorm before and it was a great way for them to experience life away from home. There was also a divide between residential and commuter students. I didn’t get to know a lot of commuters and the commuters didn’t know us. More than anything, the res kids developed a deep bond. We have all become very good friends and are trying to stay in contact.</p>
+                <p>Organize more. There were several days that we didn’t know what was expected of us because the lectures didn’t correlate or the software was setup incorrectly. Next year, localization should probably be taught before blob detection. For the software issues, you could create an image that has everything set up correctly and burn that onto each device.</p>
+                <p>That’s about it. The program was great and I really enjoyed being able to meet all of the AIs, lecturers, and students. It was the one of the greatest experiences of my life.</p>
+            </div>
+
 
             <!--                        Resources                            -->
 
             <div id="resources">
                 <h1 id="resources">Resources</h1>
                 <ol>
-                    <li><a href="https://github.com/Brenn10/MIT_BeaverWorks">My Github Repository</a></li>
+                    <li></li>
                 </ol>
             </div>
         </div>
