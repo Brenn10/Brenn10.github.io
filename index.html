@@ -92,7 +92,7 @@ Email: brenn.cain@gmail.com
                     The cars used ion this project were built off of the Traxxas Rally 74076 chassis. This chassis was used because of the Ackermann drive (front wheels used for turning) and high speed capabilities, up to 40mph.<br>
                     <div class="imcap">
                         <img src="media/chassis.png" alt="Chassis" /><br>
-                        <h4>Basic car chassis [https://drive.google.com/file/d/0B6jv7Ea8ZHnNZmZTbUdLWktyLW8/view]</h4>
+                        <h4>Basic car chassis [1]</h4>
                     </div>
                 </p>
 
@@ -101,7 +101,7 @@ Email: brenn.cain@gmail.com
                     The processor used on the car was a Nvidia Jetson TX1. This is an embedded system that uses a GPU to complete the processing. This means that the board has hundreds of cores that complete processes rather than two or four cores. This makes visual computing very fast.<br>
                     <div class="imcap">
                         <img src="media/jetson.jpg" alt="Jetson Module" /><br>
-                        <h4>Nvidia Jetson TX1 Module [http://www.nvidia.com/object/jetson-tx1-module.html]</h4>
+                        <h4>Nvidia Jetson TX1 Module [2]</h4>
                     </div>
                 </p>
 
@@ -112,19 +112,19 @@ Email: brenn.cain@gmail.com
 
                 <h3>Active Stereo Camera</h3>
                 <p>
-                    The active stereo camera uses a projector and lense to produce and read the disturbances in structured light. This allows the camera to give distances in a point cloud. A point cloud is a data structure that holds points at different angles with distances associated. [www.depthbiomechanics.co.uk/?p=102]
+                    The active stereo camera uses a projector and lense to produce and read the disturbances in structured light. This allows the camera to give distances in a point cloud. A point cloud is a data structure that holds points at different angles with distances associated. [3]
                     <div class="imcap">
                         <img src="media/active_stereo.jpg" alt="Structured Light" />
-                        <h4>[www.depthbiomechanics.co.uk/?p=102]</h4>
+                        <h4>[3]</h4>
                     </div>
                 </p>
 
                 <h3>Passive Stereo Camera</h3>
                 <p>
-                    Passive stereo cameras sense distance using the discrepancies in the images that two cameras capture. This is accomplished by matching objects on two images and finding the offset between them. <code>depth = f (b / d)</code> where <code>depth</code> is the distance to the object, <code>f</code> is the focal length of the camera, <code>b</code> is the distance between the cameras (baseline), and <code>d</code> is the disparity in pixels. [www.depthbiomechanics.co.uk/?p=102]
+                    Passive stereo cameras sense distance using the discrepancies in the images that two cameras capture. This is accomplished by matching objects on two images and finding the offset between them. <code>depth = f (b / d)</code> where <code>depth</code> is the distance to the object, <code>f</code> is the focal length of the camera, <code>b</code> is the distance between the cameras (baseline), and <code>d</code> is the disparity in pixels. [3]
                     <div class="imcap">
                         <img src="media/passive_stereo.jpg" alt="Passive camera" />
-                        <h4>Process of finding distance using passive cameras [www.depthbiomechanics.co.uk/?p=102]</h4>
+                        <h4>Process of finding distance using passive cameras [3]</h4>
                     </div>
 
                 </p>
@@ -134,7 +134,7 @@ Email: brenn.cain@gmail.com
                     The IMU is used to measure linear acceleration and angular acceleration. It accomplishes this through the use of capacitors and springs on nanoscale that shift when accelerating.
                     <div class="imcap">
                         <img src="media/imu.png" alt="IMU deflection using springs" />
-                        <h4>Deflection changing capacitance shown [https://drive.google.com/file/d/0B6jv7Ea8ZHnNZmZTbUdLWktyLW8/view] </h4>
+                        <h4>Deflection changing capacitance shown [1] </h4>
                     </div>
                 </p>
 
@@ -143,7 +143,7 @@ Email: brenn.cain@gmail.com
                     The Lidar system uses light to measure distances from the robot. This is accomplished by shooting a lazer in an arbitrary direction and timing how long the light takes to return to the robot.
                     <div class="imcap">
                         <img src="media/lidar_mechanism.png" alt="Lidar Machanism" />
-                        <h4>Mechanism used to measure the distance  [https://drive.google.com/file/d/0B6jv7Ea8ZHnNZmZTbUdLWktyLW8/view]</h4>
+                        <h4>Mechanism used to measure the distance  [1]</h4>
                     </div>
                 </p>
 
@@ -152,7 +152,7 @@ Email: brenn.cain@gmail.com
                     All of the sensors were placed on the robot as shown below. The passive stereo camera was plasced where the active stereo camera is shown and the active stereo camera was removed. A wireless router was placed on top of the robot to allow the robot to have a lower disconnection rate.
                     <div class="imcap">
                         <img src="media/car.png" alt="Image of the RACECAR with sensors" /><br>
-                        <h4>Car with all sensors [https://drive.google.com/file/d/0B6jv7Ea8ZHnNZmZTbUdLWktyLW8/view]</h4>
+                        <h4>Car with all sensors [1]</h4>
                     </div>
                 </p>
             </div>
@@ -195,7 +195,7 @@ Email: brenn.cain@gmail.com
                 </p>
                 <h2>Conclusion</h2>
                 <p>
-                    The team implemented a wall follower that could switch which wall was being followed using a gamepad. This program used the shortest distance from the robot to the wall in a range of the laser scan to find the error. This error was then fed in to the PD controller which determined the steering angle for the car to drive. The team placed 4th in the first round with a time of 8.645s [https://docs.google.com/presentation/d/12sjPkcfbD6K2bD13X8J90o-6XzXjV5yAjKpmQWqVzgc/edit?usp=sharing]. In the drag races, we progressed past the first round to be defeated by the “Fastest Loser” in the second round. The team dynamic was very healthy and enjoyable. We all learned how to deal with others' opinions and criticisms. We chose each other when were allowed to choose teams for the final weeks.
+                    The team implemented a wall follower that could switch which wall was being followed using a gamepad. This program used the shortest distance from the robot to the wall in a range of the laser scan to find the error. This error was then fed in to the PD controller which determined the steering angle for the car to drive. The team placed 4th in the first round with a time of 8.645s [4]. In the drag races, we progressed past the first round to be defeated by the “Fastest Loser” in the second round. The team dynamic was very healthy and enjoyable. We all learned how to deal with others' opinions and criticisms. We chose each other when were allowed to choose teams for the final weeks.
                 </p>
             </div>
             <hr>
@@ -213,7 +213,7 @@ Email: brenn.cain@gmail.com
                     Monday focused on colorspaces and segmentation. Colorspaces are the various was of storing colors for pixels. The normal way that most people think about color and most computers use is called the RGB color space. This color space stores values that relate to the intensities of each form of light in a pixel. <code>rgb(255,128,0)</code> means that red has full intensity, green is at half intensity and blue is off. This would make a color like  <span style="color:rgb(255,128,0)">this</span>. The BGR colorspace works in the same way, but reverses the order of each color. <code>bgr(255,128,0)</code> means that blue has full intensity, green is at half intensity and red is off. This would make a color like  <span style="color:rgb(0,128,255)">this</span>. These colorspaces are difficult to use in visual processing because lighter and darker conditions cause wide variances that cannot be easily accounted for, enter HSV. HSV stands for hue, value saturation. Hue is the absolute color from 0 to 360. In the code however, the wheel was condensed to 0 to 180. Value is how dark or light the color is (black to vibrant). Saturation is how washed out the color is. This goes from white to vivid. <code>hsv(180,170,170)</code> has a hue of blue-green, a medium-high value that makes it darker and a medium-high value that makes it washed out a bit. The color looks like <span style="color:hsl(180,75%,33%)">this</span>. The HSV colorspace is very useful in iommage processing as it is easy to designate what approximate hue you want. Hue specifies the color, saturation is used to account for whitewash, and value is used to adjust for brightness.
                     <div class="imcap">
                         <img src="media/hsv_colorspace.png" alt="HSV colorspace" />
-                        <h4>HSV Colorspace Graph [http://08073gjam2.blogspot.com/2015/01/colour-space-greyscale-rgb-yuv.html]</h4>
+                        <h4>HSV Colorspace Graph [5]</h4>
                     </div>
                 </p>
                 <p>
@@ -224,7 +224,7 @@ Email: brenn.cain@gmail.com
                 </p>
                 <h2>Labs</h2>
                 <p>
-                    The goals of the first lab was to subscribe to an image stream (the /camera/rgb/image_rect_color topic) and edit images as they come in from the zed camera. The three manipulations that were required were adding a shape overlaying the image, flipping the image about an axis, and adding a rosy appearance by increasing the red value of each pixel  [https://docs.google.com/document/d/1lAQBoGqxXGKyVxfsUCv-I--hZI69iuSgGQwtVLWHE8s/edit#]. My team was unable to complete these three objective due to problems with the passive stereo camera. The next lab involved creating a custom message, publishing and subscribing to it, and detecting blobs. My team was able to complete this challenge. We accomplished this by writing the following script:
+                    The goals of the first lab was to subscribe to an image stream (the /camera/rgb/image_rect_color topic) and edit images as they come in from the zed camera. The three manipulations that were required were adding a shape overlaying the image, flipping the image about an axis, and adding a rosy appearance by increasing the red value of each pixel  [6]. My team was unable to complete these three objective due to problems with the passive stereo camera. The next lab involved creating a custom message, publishing and subscribing to it, and detecting blobs. My team was able to complete this challenge. We accomplished this by writing the following script:
                     <script src="https://gist.github.com/Brenn10/0d1cc65b28f2ee7ec2166c98cd8e82d3.js"></script>
                     On wednesday, the weekly challenge was given, the goal was to drive toward a colored piece of paper and, depending on the color (red or green), turn right or left. This challenge was especially hard for most groups and only 2 of 9 teams were able to complete it. My team was not one of the two. The team was able to visual servo toward the wall and was also able to follow the wall on either side, however, we were not able to connect the two parts of the program to allow simple flow from visual servo to wall following.
                 </p>
@@ -256,7 +256,7 @@ Email: brenn.cain@gmail.com
                     <script src="https://gist.github.com/Brenn10/adb773e1ced1613ea04e59ad370b9731.js"></script>
                     <div class="imcap">
                         <img src="media/pot.jpg" alt="Potential Field" />
-                        <h4>[http://slideplayer.com/slide/2327748]</h4>
+                        <h4>[7]</h4>
                     </div>
                 </p>
                 <p>
@@ -298,7 +298,7 @@ Email: brenn.cain@gmail.com
                     </div>
                     <div class="imcap">
                         <img src="media/results.png" />
-                        <h4>Results of the Time Trials [https://docs.google.com/document/d/19OzNjNac9gUtkCEZR4WjfniDl3Ihfporp9AgbyFpJB0/edit#heading=h.cn8o2cbv0v6m]</h4>
+                        <h4>Results of the Time Trials [8]</h4>
                     </div>
                 </p>
                 <h2>Heats</h2>
@@ -333,8 +333,14 @@ Email: brenn.cain@gmail.com
             <div id="resources">
                 <h1 id="resources">Resources</h1>
                 <ol>
-                    <li></li>
-                </ol>
+                    <li>Guldner, Owen. "7_11_2016_IntroToRACECAR_Guldner.pdf." Google Docs. MIT Lincoln Laboratory, 11 July 2016. Web. 21 Aug. 2016. <https://drive.google.com/file/d/0B6jv7Ea8ZHnNZmZTbUdLWktyLW8/view>.
+                    </li><li>"Jetson TX1 Embedded Systems Module from NVIDIA Jetson." Jetson TX1 Embedded Systems Module. Nvidia, 2016. Web. 21 Aug. 2016. <http://www.nvidia.com/object/jetson-tx1-module.html>.
+                    </li><li>Clarkson, Sean. "Depth Biomechanics." Depth Biomechanics. Depth Biomechanics, n.d. Web. 22 Aug. 2016. <http://www.depthbiomechanics.co.uk/?p=102>.
+                    </li><li>"Week 1 Results." Week 1 – “Move” Drag Race Demonstration. MIt/Beaver Works Summer Institute, n.d. Web. 21 Aug. 2016. <https://docs.google.com/presentation/d/12sjPkcfbD6K2bD13X8J90o-6XzXjV5yAjKpmQWqVzgc/edit>.
+                    </li><li>Geroge. "Unit 35 Graphics." Colour Space: Greyscale, RGB, YUV (Luminance & Chrominance), HSV (Hue, Saturation & Value). Unit 35 Graphics, 13 Jan. 2015. Web. 21 Aug. 2016. <http://08073gjam2.blogspot.com/2015/01/colour-space-greyscale-rgb-yuv.html>.
+                    </li><li>"Tuesday Lab 1: Using the ZED Camera with ROS." Google Docs. MIT Beaver Works Summer Institute, 2016. Web. 21 Aug. 2016. <https://docs.google.com/document/d/1lAQBoGqxXGKyVxfsUCv-I--hZI69iuSgGQwtVLWHE8s/edit>.
+                    </li><li>Kuipers, Benjamin. "Lecture 7: Potential Fields and Model Predictive Control CS 344R: Robotics Benjamin Kuipers." .Potential Fields and Model Predictive Control. Kaelyn Sprague, n.d. Web. 21 Aug. 2016. <http://slideplayer.com/slide/2327748>. </li><li>
+                    "Live Results." Google Docs. MIT Beaver Works Summer Institute, n.d. Web. 21 Aug. 2016. <https://docs.google.com/document/d/19OzNjNac9gUtkCEZR4WjfniDl3Ihfporp9AgbyFpJB0/edit#heading=h.cn8o2cbv0v6m>. </li>
             </div>
         </div>
     </body>
