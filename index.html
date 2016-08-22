@@ -61,10 +61,10 @@ Email: brenn.cain@gmail.com
             <div id="overview">
                 <h1>The program</h1>
                 <p>
-                    The Beaver Works Summer Institue (BWSI) began as an idea by Dr. Robert "Bob" Shin of MIT Lincoln Labs to create a summer program for programmers, an area that was previously undeveloped. His goal was to create a program where high school students from around the United States could work together with top researchers and professionals in the field of robotics to develop autonomous robotics systems. In order to find students for the pilot year of BWSI, Dr. Shin contacted the National Consortium of Secondary STEM Schools (NCSSS) and was able to find students from many of the member schools. Students came from 11 states: Mississippi, Illinois, Arkansas, California, New York, Maine, North Carolina, South Carolina, Virginia, New Jersey, and Massachuessets.
+                    The Beaver Works Summer Institute (BWSI) began as an idea by Dr. Robert "Bob" Shin of MIT Lincoln Labs to create a summer program for programmers, an area that was previously undeveloped. His goal was to create a program where high school students from around the United States could work together with top researchers and professionals in the field of robotics to develop autonomous robotics systems. In order to find students for the pilot year of BWSI, Dr. Shin contacted the National Consortium of Secondary STEM Schools (NCSSS) and was able to find students from many of the member schools. Students came from 11 states: Mississippi, Illinois, Arkansas, California, New York, Maine, North Carolina, South Carolina, Virginia, New Jersey, and Massachusetts.
                 </p>
                 <p>
-                    The program lasted for 4 weeks. The students worked each weekday from 9:00am to 5:00pm. During the weekdays, the students listened to lectures and seminars and worked on labs to enforce the material and accomplish weekly goals. On Tuesdays and Thursdays the students would also attend a lesson on communication with Dr. Jane Connor. Each week, the students were given a section of robotics to learn and a challenge.
+                    The program lasted for 4 weeks. The students worked each weekday from 9:00am to 5:00pm. During the weekdays, the students listened to lectures and seminars and worked on labs to enforce the material and accomplish weekly goals. On Tuesdays and Thursdays, the students would also attend a lesson on communication with Dr. Jane Connor. Each week, the students were given a section of robotics to learn and a challenge.
                 </p>
                 <p>
                     Week 1 focused on the basics of the basics of the Robot Operating System (ROS), Linux (Ubuntu), and Python. The challenge for the week was to make the robot follow the wall using the Lidar.
@@ -76,7 +76,7 @@ Email: brenn.cain@gmail.com
                     Week 3 was intended to be focused on localization and mapping, however, several technical issues led to a focus on the technical challenges instead. These challenges included exploring and detecting colored blobs and completing a correct turn at a colored piece of paper.
                 </p>
                 <p>
-                    Week 4 was focused on final preparation for the Grand Prix, the final challenge. The Grand Prix was to be a race around a miniature GRand Prix circuit, complete with shortcuts and sharp turns. During this week, the Grand Prix was hosted and tech challenges were completed.
+                    Week 4 was focused on final preparation for the Grand Prix, the final challenge. The Grand Prix was to be a race around a miniature Grand Prix circuit, complete with shortcuts and sharp turns. During this week, the Grand Prix was hosted and tech challenges were completed.
                 </p>
             </div>
             <hr>
@@ -107,12 +107,12 @@ Email: brenn.cain@gmail.com
 
                 <h2>Sensors</h2>
                 <p>
-                    Numerous sensors were used to allow the car to be able to sense its envrironnment.
+                    Numerous sensors were used to allow the car to be able to sense its environment.
                 </p>
 
                 <h3>Active Stereo Camera</h3>
                 <p>
-                    The active stereo camera uses a projector and lense to produce and read the disturbances in structured light. This allows the camera to give distances in a point cloud. A point cloud is a data structure that holds points at different angles with distances associated. [3]
+                    The active stereo camera uses a projector and camera to produce and read the disturbances in structured light. This allows the camera to give distances in a point cloud. A point cloud is a data structure that holds points at different angles with distances associated. [3]
                     <div class="imcap">
                         <img src="media/active_stereo.jpg" alt="Structured Light" />
                         <h4>[3]</h4>
@@ -140,16 +140,16 @@ Email: brenn.cain@gmail.com
 
                 <h3>2D Lidar</h3>
                 <p>
-                    The Lidar system uses light to measure distances from the robot. This is accomplished by shooting a lazer in an arbitrary direction and timing how long the light takes to return to the robot.
+                    The Lidar system uses light to measure distances from the robot. This is accomplished by shooting a laser in an arbitrary direction and timing how long the light takes to return to the robot.
                     <div class="imcap">
-                        <img src="media/lidar_mechanism.png" alt="Lidar Machanism" />
-                        <h4>Mechanism used to measure the distance  [1]</h4>
+                        <img src="media/lidar_mechanism.png" alt="Lidar Mechanism" />
+                        <h4>Mechanism used to measure the distance [1]</h4>
                     </div>
                 </p>
 
                 <h3>Full Car</h3>
                 <p>
-                    All of the sensors were placed on the robot as shown below. The passive stereo camera was plasced where the active stereo camera is shown and the active stereo camera was removed. A wireless router was placed on top of the robot to allow the robot to have a lower disconnection rate.
+                    All of the sensors were placed on the robot as shown below. The passive stereo camera was placed where the active stereo camera is shown and the active stereo camera was removed. A wireless router was placed on top of the robot to allow the robot to have a lower disconnection rate.
                     <div class="imcap">
                         <img src="media/car.png" alt="Image of the RACECAR with sensors" /><br>
                         <h4>Car with all sensors [1]</h4>
@@ -164,11 +164,11 @@ Email: brenn.cain@gmail.com
                 <h1>Week 1</h1>
                 <h2>Goals</h2>
                 <p>
-                    There were several goals for week 1. The first goal was to level the playing field for all students by reteaching everything from the summer work. The next goal was to learn how to use the lidar to interpret the environment and follow a wall.
+                    There were several goals for week 1. The first goal was to level the playing field for all students by reteaching everything from the summer work. The next goal was to learn how to use the LIDAR to interpret the environment and follow a wall.
                 </p>
                 <h2>Lectures</h2>
                 <p>
-                    The first day of the program was intended to explain the basics of the cars we were using. The Jetson TX1 is the processor we used. This is a special processor with hundreds of cores that allow for fast parallel processing. ROS is based upon the idea of parallel processing and, as such, works well with the Jetson. We decided to use a special distribution of Ubuntu for the Jetson. ROS runs on Linux and Ubuntu is a very easy version to use. On top of the cars are wireless routers that allow the robot and our computers to connect to each other and the internet. An electronic speed controller (VESC) is used to control the driving speed and steering angle of the robot. A passive stereo camera is used to sense depth and input images. A lidar is used to perceive distances in a horizontal plane in a 270&deg; angle.
+                    The first day of the program was intended to explain the basics of the cars we were using. The Jetson TX1 is the processor we used. This is a special processor with hundreds of cores that allow for fast parallel processing. ROS is based upon the idea of parallel processing and, as such, works well with the Jetson. We decided to use a special distribution of Ubuntu for the Jetson. ROS runs on Linux and Ubuntu is a very easy version to use. On top of the cars are wireless routers that allow the robot and our computers to connect to each other and the internet. An electronic speed controller (VESC) is used to control the driving speed and steering angle of the robot. A passive stereo camera is used to sense depth and input images. A LIDAR is used to perceive distances in a horizontal plane in a 270&deg; angle.
                 </p>
                 <p>
                     The next day we learned about the basics of Linux, Python, ROS, and robotics. We learned the basics of the Linux shell, Python syntax and tricks, ROS topics and nodes, and robotic architecture.
@@ -181,7 +181,7 @@ Email: brenn.cain@gmail.com
                     We connected to the cars and learned how to publish topics. Topics are channels of communication between nodes that allow for easy transfer of data. Nodes are individual parts of a robot such as a sensor, motor, controller, or output device.
                 </p>
                 <p>
-                    We ran nodes to demonstrate communication between ros nodes. We also learned how to simulate a physical environment using the gazebo simulator.
+                    We ran nodes to demonstrate communication between ROS nodes. We also learned how to simulate a physical environment using the gazebo simulator.
                 </p>
                 <p>
                     We used rviz to see the output from sensors on the robot and rosbagged all topics in order to understand what happens when the robot runs. Rosbag is a command in ROS that saves data published to topics in real time.
@@ -206,27 +206,27 @@ Email: brenn.cain@gmail.com
                 <h1>Week 2</h1>
                 <h2>Goals</h2>
                 <p>
-                    The goals for week 2 were to be able to use blob detection, visual servo toward a blob, and recognize different colored blobs. Blobs are colored swatches. Contour has a similar meaning, a contour is an area of a similar color of an area that fits inside a ceratin criteria. We used pieces of paper for the blobs. Visual servoing is following a blob toward a target.
+                    The goals for week 2 were to be able to use blob detection, visual servo toward a blob, and recognize different colored blobs. Blobs are colored swatches. Contour has a similar meaning; a contour is an area of a similar color of an area that fits inside a certain criterion. We used pieces of paper for the blobs. Visual servoing is following a blob toward a target.
                 </p>
                 <h2>Lectures</h2>
                 <p>
-                    Monday focused on colorspaces and segmentation. Colorspaces are the various was of storing colors for pixels. The normal way that most people think about color and most computers use is called the RGB color space. This color space stores values that relate to the intensities of each form of light in a pixel. <code>rgb(255,128,0)</code> means that red has full intensity, green is at half intensity and blue is off. This would make a color like  <span style="color:rgb(255,128,0)">this</span>. The BGR colorspace works in the same way, but reverses the order of each color. <code>bgr(255,128,0)</code> means that blue has full intensity, green is at half intensity and red is off. This would make a color like  <span style="color:rgb(0,128,255)">this</span>. These colorspaces are difficult to use in visual processing because lighter and darker conditions cause wide variances that cannot be easily accounted for, enter HSV. HSV stands for hue, value saturation. Hue is the absolute color from 0 to 360. In the code however, the wheel was condensed to 0 to 180. Value is how dark or light the color is (black to vibrant). Saturation is how washed out the color is. This goes from white to vivid. <code>hsv(180,170,170)</code> has a hue of blue-green, a medium-high value that makes it darker and a medium-high value that makes it washed out a bit. The color looks like <span style="color:hsl(180,75%,33%)">this</span>. The HSV colorspace is very useful in iommage processing as it is easy to designate what approximate hue you want. Hue specifies the color, saturation is used to account for whitewash, and value is used to adjust for brightness.
+                    Monday focused on color spaces and segmentation. Color spaces are the various was of storing colors for pixels. The normal way that most people think about color and most computers use is called the RGB color space. This color space stores values that relate to the intensities of each form of light in a pixel. <code>rgb(255,128,0)</code> means that red has full intensity, green is at half intensity and blue is off. This would make a color like  <span style="color:rgb(255,128,0)">this</span>. The BGR color space works in the same way, but reverses the order of each color. <code>bgr(255,128,0)</code> means that blue has full intensity, green is at half intensity and red is off. This would make a color like  <span style="color:rgb(0,128,255)">this</span>. These color spaces are difficult to use in visual processing because lighter and darker conditions cause wide variances that cannot be easily accounted for, enter HSV. HSV stands for hue, value saturation. Hue is the absolute color from 0 to 360. In the code however, the wheel was condensed to 0 to 180. Value is how dark or light the color is (black to vibrant). Saturation is how washed out the color is. This goes from white to vivid. <code>hsv(180,170,170)</code> has a hue of blue-green, a medium-high value that makes it darker and a medium-high value that makes it washed out a bit. The color looks like <span style="color:hsl(180,75%,33%)">this</span>. The HSV color space is very useful in image processing as it is easy to designate what approximate hue you want. Hue specifies the color, saturation is used to account for whitewash, and value is used to adjust for brightness.
                     <div class="imcap">
-                        <img src="media/hsv_colorspace.png" alt="HSV colorspace" />
-                        <h4>HSV Colorspace Graph [5]</h4>
+                        <img src="media/hsv_colorspace.png" alt="HSV color space" />
+                        <h4>HSV Color Space Graph [5]</h4>
                     </div>
                 </p>
                 <p>
-                    Segmentation is using as binary mask to select parts of an image. A mask is an boolean, two-dimensional array that represents an image. If a certain pixel matches a pattern, the bit at that indwex in the array becomes true. Masks are used to show areas of an image where a certain criteria is true. These criteria are ranges of HSV values. An example would be: <code>mask = cv2.inRange(image_in_hsv, numpy.array([0, 100, 200]), numpy.array([15, 255, 255]))</code>. This goes through the image and finds any pixel with hues between 0 and 15, saturation between 100 and 255, and value between 200 and 255. In our lab this found a piece of paper on the wall.
+                    Segmentation is using as binary mask to select parts of an image. A mask is an boolean, two-dimensional array that represents an image. If a certain pixel matches a pattern, the bit at that index in the array becomes true. Masks are used to show areas of an image where a certain criterion is true. These criteria are ranges of HSV values. An example would be: <code>mask = cv2.inRange(image_in_hsv, numpy.array([0, 100, 200]), numpy.array([15, 255, 255]))</code>. This goes through the image and finds any pixel with hues between 0 and 15, saturation between 100 and 255, and value between 200 and 255. In our lab this found a piece of paper on the wall.
                 </p>
                 <p>
-                    Tuesday focused on programming the robot to use visual input. The lectures focused on using the passive stereo (ZED) camera with ROS, detecting blobs, and visual servoing. The passive camera published to the following topics in the camera namespace: rgb/image_rect_color, depth/image_rect_color, rgb_camera_info. The programs subscribed to the /camera/rgb/image_rect_color topic which published RGB images from the camera. Blob detection is using openCV to group clusters of true indexes in masks. This allows programmers to determine the size, shape, and location of detected objects. The locations of these coontours are used for navigation called visual servoing. Visual servoing is the use of an inputted image to determine the appropriate action.
+                    Tuesday focused on programming the robot to use visual input. The lectures focused on using the passive stereo (ZED) camera with ROS, detecting blobs, and visual servoing. The passive camera published to the following topics in the camera namespace: rgb/image_rect_color, depth/image_rect_color, rgb_camera_info. The programs subscribed to the /camera/rgb/image_rect_color topic which published RGB images from the camera. Blob detection is using openCV to group clusters of true indexes in masks. This allows programmers to determine the size, shape, and location of detected objects. The locations of these contours are used for navigation called visual servoing. Visual servoing is the use of an inputted image to determine the appropriate action.
                 </p>
                 <h2>Labs</h2>
                 <p>
-                    The goals of the first lab was to subscribe to an image stream (the /camera/rgb/image_rect_color topic) and edit images as they come in from the zed camera. The three manipulations that were required were adding a shape overlaying the image, flipping the image about an axis, and adding a rosy appearance by increasing the red value of each pixel  [6]. My team was unable to complete these three objective due to problems with the passive stereo camera. The next lab involved creating a custom message, publishing and subscribing to it, and detecting blobs. My team was able to complete this challenge. We accomplished this by writing the following script:
+                    The goals of the first lab was to subscribe to an image stream (the /camera/rgb/image_rect_color topic) and edit images as they come in from the zed camera. The three manipulations that were required were adding a shape overlaying the image, flipping the image about an axis, and adding a rosy appearance by increasing the red value of each pixel [6]. My team was unable to complete these three objective due to problems with the passive stereo camera. The next lab involved creating a custom message, publishing and subscribing to it, and detecting blobs. My team was able to complete this challenge. We accomplished this by writing the following script:
                     <script src="https://gist.github.com/Brenn10/0d1cc65b28f2ee7ec2166c98cd8e82d3.js"></script>
-                    On wednesday, the weekly challenge was given, the goal was to drive toward a colored piece of paper and, depending on the color (red or green), turn right or left. This challenge was especially hard for most groups and only 2 of 9 teams were able to complete it. My team was not one of the two. The team was able to visual servo toward the wall and was also able to follow the wall on either side, however, we were not able to connect the two parts of the program to allow simple flow from visual servo to wall following.
+                    On Wednesday, the weekly challenge was given, the goal was to drive toward a colored piece of paper and, depending on the color (red or green), turn right or left. This challenge was especially hard for most groups and only 2 of 9 teams were able to complete it. My team was not one of the two. The team was able to visual servo toward the wall and was also able to follow the wall on either side, however, we were not able to connect the two parts of the program to allow simple flow from visual servo to wall following.
                 </p>
                 <h2>Conclusion</h2>
                 <p>
@@ -249,10 +249,10 @@ Email: brenn.cain@gmail.com
                 </p>
                 <h2>Labs</h2>
                 <p>
-                    Monday's lab was to create a map using the SLAM approach. SLAM uses Lidar and odometry to assume the robot's position and draw a map. As the robot moves through an environment, it read the lidar and adds the reading to the map, the robot then adjusts its current assumed position to align with the more detailed map. It continues through many iterations of this to build a highly detailed map of the surroundings. Most robots were able to build a very low quality map which was due to very imprecise odometry.
+                    Monday's lab was to create a map using the SLAM approach. SLAM uses Lidar and odometry to assume the robot's position and draw a map. As the robot moves through an environment, it read the LIDAR and adds the reading to the map, the robot then adjusts its current assumed position to align with the more detailed map. It continues through many iterations of this to build a highly detailed map of the surroundings. Most robots were able to build a very low quality map which was due to very imprecise odometry.
                 </p>
                 <p>
-                    Tuesday's goal was to be able to navigate a racetrack that was full of obstacles to avoid. Most teams were able to accomplish this through various methods. My team used the potential field method. This method used each point in the lidar scan as a point charge and placed a large point charge behind the robot. All charges were positive and pushed the robot away from obstacles and forward. The equations that describe the direction and speed are \(speed=\sum{sin(1/d^2)}+pushingCharge\) and  \(direction=\sum{cos(1/d^2)}\). A major issue to this approach is the chance of reaching a local minimum where there is a low enough potential field vector that the car stops. To rectify this, the team added a stuck function that checked if the car was stuck and, if so, backed up for a second before resuming.
+                    Tuesday's goal was to be able to navigate a racetrack that was full of obstacles to avoid. Most teams were able to accomplish this through various methods. My team used the potential field method. This method used each point in the LIDAR scan as a point charge and placed a large point charge behind the robot. All charges were positive and pushed the robot away from obstacles and forward. The equations that describe the direction and speed are \(speed=\sum{sin(1/d^2)}+pushingCharge\) and  \(direction=\sum{cos(1/d^2)}\). A major issue to this approach is the chance of reaching a local minimum where there is a low enough potential field vector that the car stops. To rectify this, the team added a stuck function that checked if the car was stuck and, if so, backed up for a second before resuming.
                     <script src="https://gist.github.com/Brenn10/adb773e1ced1613ea04e59ad370b9731.js"></script>
                     <div class="imcap">
                         <img src="media/pot.jpg" alt="Potential Field" />
@@ -276,12 +276,12 @@ Email: brenn.cain@gmail.com
 
             <div id="week4">
                 <h1 id="week4">Week 4</h1>
-                <h2>Before raceday</h2>
+                <h2>Before Race Day</h2>
                 <p>
-                    The final lecture was given by Dr. Sertac Karaman, Lead Instructor. This Lecture focused on the importance of autonomous vehicvles and how the knowledge from the camp can be applied outside of the camp. The rest of the week was dedicated to preparation for the races and technical challenges. The code freeze for the tech challenges was at 11:15 on tuesday and for the grand prix was at 5:00 on friday.
+                    The final lecture was given by Dr. Sertac Karaman, Lead Instructor. This Lecture focused on the importance of autonomous vehicles and how the knowledge from the camp can be applied outside of the camp. The rest of the week was dedicated to preparation for the races and technical challenges. The code freeze for the tech challenges was at 11:15 on Tuesday and for the grand prix was at 5:00 on Friday.
                 </p>
                 <p>
-                    The team worked to hack together the different programs we had written throughout the past four weeks to create a single program that could be used to compete. We decided on using potential fields for both the time trial and grand prix in order to avoid cars and quickly navigate. Although the challenge specification was to detertmine whether or not ot go down the shortcut based on the color of the blob, we decided to always go right to be safe by adding an extra point charge to the left of the car to push it to the right.
+                    The team worked to hack together the different programs we had written throughout the past four weeks to create a single program that could be used to compete. We decided on using potential fields for both the time trial and grand prix in order to avoid cars and quickly navigate. Although the challenge specification was to determine whether or not to go down the shortcut based on the color of the blob, we decided to always go right to be safe by adding an extra point charge to the left of the car to push it to the right.
                 </p>
                 <h2>Technical Challenges</h2>
                 <p>
@@ -291,7 +291,7 @@ Email: brenn.cain@gmail.com
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/TqN69NZ3m8w" frameborder="0" allowfullscreen></iframe>
                 <h2>Time Trial</h2>
                 <p>
-                    For the time trial, we decided to use our grand prix code which used a potential field for navigation. This last minute change allowed use to very quickly navigate the turn and never go down the shortcut when we werent supposed to. We earned 3rd place in the time trials securing us a place on the front row for the grand prix.
+                    For the time trial, we decided to use our grand prix code which used a potential field for navigation. This last minute change allowed use to very quickly navigate the turn and never go down the shortcut when we weren’t supposed to. We earned 3rd place in the time trials securing us a place on the front row for the grand prix.
                     <div class="imcap">
                         <img src="media/circuit.png" />
                         <h4>Final Grand Prix Circuit Map</h4>
@@ -303,11 +303,11 @@ Email: brenn.cain@gmail.com
                 </p>
                 <h2>Heats</h2>
                 <p>
-                    The first heat was made up by the first, second, and third place teams. We competed in theis heat and placed second putting us in the middle of the front row for the grand prix, the ideal position for our potential field navgiator.
+                    The first heat was made up by the first, second, and third place teams. We competed in this heat and placed second putting us in the middle of the front row for the grand prix, the ideal position for our potential field navigator.
                 </p>
                 <h2>Grand Prix</h2>
                 <p>
-                    This event was just for fun. All 9 racecars were placed on teh track simultaneously and drove around until their batteries ran out. Many robots became turned around and blocked each other but overall, the robots all ran very well.
+                    This event was just for fun. All 9 racecars were placed on the track simultaneously and drove around until their batteries ran out. Many robots became turned around and blocked each other but overall, the robots all ran very well.
                 </p>
             </div>
             <hr>
@@ -341,6 +341,7 @@ Email: brenn.cain@gmail.com
                     </li><li>"Tuesday Lab 1: Using the ZED Camera with ROS." Google Docs. MIT Beaver Works Summer Institute, 2016. Web. 21 Aug. 2016. <https://docs.google.com/document/d/1lAQBoGqxXGKyVxfsUCv-I--hZI69iuSgGQwtVLWHE8s/edit>.
                     </li><li>Kuipers, Benjamin. "Lecture 7: Potential Fields and Model Predictive Control CS 344R: Robotics Benjamin Kuipers." .Potential Fields and Model Predictive Control. Kaelyn Sprague, n.d. Web. 21 Aug. 2016. <http://slideplayer.com/slide/2327748>. </li><li>
                     "Live Results." Google Docs. MIT Beaver Works Summer Institute, n.d. Web. 21 Aug. 2016. <https://docs.google.com/document/d/19OzNjNac9gUtkCEZR4WjfniDl3Ihfporp9AgbyFpJB0/edit#heading=h.cn8o2cbv0v6m>. </li>
+                </ol>
             </div>
         </div>
     </body>
